@@ -1,3 +1,83 @@
 .hero__container {
   display: flex;
+  justify-content: space-between;
+  padding: 0px 56px;
+}
+
+.hero__info {
+  width: 50%;
+  padding: 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  max-width: 500px;
+}
+
+.hero__title {
+  color: var(--title);
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.hero__description {
+  color: var(--text);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.hero__icon-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero__img {
+  width: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* From https://css.glass */
+  background: rgba(255, 208, 18, 0.28);
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 4px 30px rgba(255, 208, 18, 0.4);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid var(--icon);
+  color: var(--icon);
+}
+
+.hero__icon-text {
+  font-weight: bold;
+  color: var(--title);
+}
+
+@media screen and (max-width: 1300px) {
+  .hero__container {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero__img {
+    display: none;
+  }
 }
