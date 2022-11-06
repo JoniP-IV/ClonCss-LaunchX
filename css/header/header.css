@@ -1,0 +1,25 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 56px;
+  min-height: 130px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 20px 20px 60px rgba(196, 196, 196, 0.5);
+}
+
+.header__title {
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header__btn {
+  background-color: var(--primary);
+  border: none;
+  padding: 16px 32px;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 4px 4px 12px #304bb6;
+}

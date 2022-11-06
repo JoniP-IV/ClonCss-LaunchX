@@ -5,15 +5,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Estilos generales -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/header/header.css">
+  <link rel="stylesheet" href="css/header/nav.css">
+  <link rel="stylesheet" href="css/hero/hero.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <title>ClonCss-LaunchX</title>
 </head>
 
 <body>
+  <!-- HEADER SECTION -->
+  <header class="header__container">
+    <a class="header__title" href="#">Vaccination</a>
+    <nav>
+      <ul class="nav__container">
+        <li><a class="nav__link" href="#">Database</a></li>
+        <li><a class="nav__link" href="#">Education</a></li>
+        <li><a class="nav__link" href="#">News</a></li>
+        <li><a class="nav__link" href="#">Regulation</a></li>
+      </ul>
+    </nav>
+    <button class="header__btn"> Hoax Buster</button>
+  </header>
+  <!-- HERO SECTION -->
+  <section class="hero__container">
+    <div class="hero__info">
+      <h2 class="hero__title">Fight Virus With <span>Vaccines</span></h2>
+      <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected.
+      </p>
+      <div class="hero__icon-group">
+        <div class="hero__icon">
+          <i class="bi bi-shield-fill-check "></i>
+          <p>Best Protection</p>
+        </div>
+        <div class="hero__icon">
+          <i class="bi bi-star-fill"></i>
+          <p>Selected Vaccines</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero__img">
+      <img src="img/img.png" alt="vaccines-img">
+    </div>
+  </section>
+
+
 </body>
 
 </html>
